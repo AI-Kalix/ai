@@ -6,6 +6,7 @@ export const router = express.Router();
 router.post("/analysis", async (req, res) => {
 	try {
 		const { resource, userId, answers } = req.body;
+		console.log("req.body", JSON.stringify(req.body, null, 2));
 
 		// Validación básica
 		if (!resource || !userId) {
@@ -35,6 +36,7 @@ router.post("/analysis", async (req, res) => {
 		}
 
 		const result = await analysisService.analyzeData(req.body);
+		console.log("result", JSON.stringify(result, null, 2));
 		res.json(result);
 	} catch (error) {
 		res.status(500).json({
