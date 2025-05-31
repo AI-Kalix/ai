@@ -1,0 +1,41 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+.env
+.env.*.local
+.vscode/
+coverage/
+logs/
+*.log
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs/Editors
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Optional: si usas TypeScript
+*.d.ts
+out/
+
+# Optional: si usas PM2 o herramientas similares
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Optional: si usas Next.js
+.next/
+out/
+
+# Optional: si usas Nuxt.js
+.nuxt/
